@@ -41,6 +41,11 @@ nav ul li a:hover {
     padding: 20px;
 }
 
+.intro p{
+    margin-left: 20px;
+    padding: 5px;
+}
+
 .redes {
     display: flex;
     gap: 10px; /* Espaciado entre los iconos */
@@ -110,4 +115,21 @@ footer{
     color: white;
     text-align: center;
     padding: 5px;
+}
+
+/* Estilos para la galería */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+}
+.gallery h1{
+    padding: 20px;
+    background-color: #87878741;
 }
