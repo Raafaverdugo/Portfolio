@@ -133,3 +133,72 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+
+/* ======= Media Queries para tablet y móvil ======= */
+
+
+/* Móvil */
+@media (max-width: 768px) {
+    /* Cambiar la disposición de la lista de hobbies */
+    .hobby-list {
+        grid-template-columns: 1fr; /* Columna única */
+        padding: 15px;
+    }
+    
+    /* Imagen de la galería: reducir el tamaño */
+    .photo-gallery img {
+        width: 100%; /* Asegura que la imagen ocupe el 100% de su contenedor */
+        height: auto;
+    }
+    
+    /* Ajuste de tamaño del título en Conóceme */
+    .about h1 {
+        font-size: 24px;
+    }
+    
+    /* Cambiar el tamaño de las fuentes */
+    h1, h2 {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+    
+    /* Footer: añadir padding */
+    footer {
+        padding: 15px;
+    }
+    
+    /* Ajuste de la imagen de perfil */
+    #myimg {
+        width: 200px;
+        height: auto;
+        margin: 20px auto;
+    }
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+    /* Cambiar la disposición de la lista de hobbies */
+    .hobby-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    /* Imagen de la galería: reducir el tamaño */
+    .photo-gallery img {
+        width: 350px;
+    }
+
+    /* Sección de Conóceme */
+    .about h1 {
+        font-size: 28px;
+    }
+
+    /* Ajuste de márgenes y paddings */
+    main {
+        margin: 15px auto;
+        padding: 15px;
+    }
+}

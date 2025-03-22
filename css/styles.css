@@ -124,4 +124,96 @@ footer {
     color: white;
     text-align: center;
     padding: 5px;
+    margin-top: 20px;
 }
+
+/* ======= Media Queries para tablet y móvil ======= */
+
+/* Móvil */
+@media (max-width: 768px) {
+    /* Sección de presentación */
+    .titulo {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .intro p {
+        margin-left: 0;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    /* Imagen de perfil */
+    #myimg {
+        width: 250px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    /* Sección de datos (cambiar a una sola columna) */
+    .datos {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    /* Ajustar tamaños de los iconos en redes sociales */
+    .redes a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Ajuste del tamaño de los títulos */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    /* Ajuste de tamaño de los textos */
+    p {
+        font-size: 15px;
+    }
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+    /* Sección de presentación */
+    .titulo {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .intro p {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    /* Imagen de perfil */
+    #myimg {
+        width: 400px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    /* Sección de datos (cambiar a una sola columna) */
+    .datos {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    /* Redes sociales (centrar y ajustar los iconos) */
+    .redes {
+        justify-content: center;
+    }
+
+    .redes a img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
