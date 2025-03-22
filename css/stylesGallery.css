@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+main {
+    max-width: 1300px;
+    margin: 20px auto;
+    margin-bottom: 0px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.gallery {
+    text-align: center;
+}
+
+.gallery h1{
+    padding: 10px;
+    background-color: #87878741;
+}
+.gallery h1, .gallery h3 {
+    color: #444;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.project h2 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 16px;
+    color: #666;
+}
+
+.wordpress-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e6e6e6;
+}
+
+.wordpress-section h2 {
+    text-align: center;
+    color: #444;
+}
+
+.wordpress-section p {
+    font-size: 18px;
+    text-align: center;
+}
+
+span{
+    font-weight: bold;
+}
+
+a{
+    color: #444;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
