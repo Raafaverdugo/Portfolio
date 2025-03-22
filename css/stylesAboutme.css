@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* ======= Estilos Globales ======= */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Header y navegación */
+/* ======= Header y Navegación ======= */
 header {
     background-color: #222;
     padding: 1rem;
@@ -34,39 +34,48 @@ nav ul li a:hover {
     color: #ccc;
 }
 
-/* Contenido principal */
+/* ======= Contenedor Principal ======= */
 main {
     max-width: 1300px;
-    margin: 20px auto 0;
+    margin: 20px auto;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-/* Sección de galería */
-.gallery {
+/* ======= Sección "Conóceme" ======= */
+.about {
     text-align: center;
 }
 
-.gallery h1 {
-    padding: 15px;
+.about h1 {
+    font-size: 30px;
     background-color: #87878741;
-    font-size: 25px;
+    padding: 15px;
 }
 
-.gallery h1, 
-.gallery h3 {
+/* ======= Sección "Hobbies y Pasatiempos" ======= */
+.hobbies {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e6e6e6;
+}
+
+.hobbies h2 {
+    text-align: center;
     color: #444;
 }
 
-/* Proyectos */
-.projects {
+/* Lista de hobbies en formato grid */
+.hobby-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
-.project {
+/* Estilos individuales para cada hobby */
+.hobby {
     background: #fff;
     padding: 15px;
     border-radius: 10px;
@@ -74,57 +83,53 @@ main {
     text-align: center;
 }
 
-.project img {
+/* Imágenes dentro de los hobbies */
+.hobby img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
-.project img:hover {
+.hobby img:hover {
     transform: scale(1.05);
     opacity: 0.9;
 }
 
-.project h2 {
-    font-size: 22px;
+/* Títulos y textos en la sección de hobbies */
+.hobby h3 {
+    font-size: 20px;
     margin: 10px 0;
 }
 
-.project p {
+.hobby p {
     font-size: 16px;
     color: #666;
 }
 
-/* Sección de WordPress */
-.wordpress-section {
+/* ======= Sección "Galería Personal" ======= */
+.gallery {
     margin-top: 40px;
-    padding: 20px;
-    background-color: #e6e6e6;
     text-align: center;
 }
 
-.wordpress-section h2 {
+.gallery h2 {
     color: #444;
 }
 
-.wordpress-section p {
-    font-size: 18px;
+.photo-gallery img {
+    width: 400px; 
+    height: auto; 
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; 
 }
 
-/* Enlaces */
-a {
-    color: #444;
-}
-
-span {
-    font-weight: bold;
-}
-
-/* Footer */
+/* ======= Footer ======= */
 footer {
     background-color: #222;
     color: white;
     text-align: center;
     padding: 10px;
+    margin-top: 20px;
 }
